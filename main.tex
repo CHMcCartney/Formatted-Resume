@@ -1,0 +1,224 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeExperienceHeading}[2]{
+    \vspace{-2pt}
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+
+\begin{center}
+    \textbf{\Large \scshape Charles McCartney} \\ \vspace{1pt}
+    \begin{tabular}{c}
+    Roswell, GA 30076 $|$ +1-404-820-6505 $|$ \href{mailto:charleshmccartney@gmail.com}{charleshmccartney@gmail.com} \\ 
+    \href{https://linkedin.com/in/charles-mccartney-hugh}{linkedin.com/in/charles-mccartney-hugh} 
+    $|$
+    \href{https://github.com/CHMcCartney}{github.com/CHMcCartney} $|$ U.S. and U.K. Citizen
+    \end{tabular}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Bachelor of Science in Computer Science; GPA: 3.76/4.00}{Aug. 2020 -- May 2024}
+    \resumeItemListStart
+        \resumeItem{Certification in Information Technology Management} 
+        \resumeItem{Georgia Tech Oxford Study Abroad Program \hfill \emph{May 2022 -- Aug. 2022}}
+    \resumeItemListEnd 
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Georgia Tech Hacklytics} $|$ \emph{Data Science Hackathon}}{Feb. 2024}
+          \resumeItemListStart
+            \resumeItem{\textbf{Achievement: } Awarded Best Domain by Major League Hacking (NoLapse.tech)}
+            \resumeItem{Aggregated SAMSHA data to evaluate the most significant correlative factors for relapse}
+            \resumeItem{Implemented a random forest model to predict relapse probability using Sci-kit Learn, Pandas, and NumPy}
+            \resumeItem{Created front-end dashboard to explore data insights using Gradio, HTML/CSS, and Python}
+          \resumeItemListEnd 
+      \resumeProjectHeading
+          {\textbf{Epi Info Application Development} $|$ \emph{Centers for Disease Control and Prevention}}{Aug. 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Updated and overhauled a mobile data collection app for epidemiological research, improving functionality}
+            \resumeItem{Implemented data synchronization and sharing tools using Box cloud services and SQLite}
+            \resumeItem{Translated outdated codebase to modern frameworks for compatibility, using Java and recent Android SDK/API }
+            \resumeItem{Emphasized Agile methods, delivering well-documented artifacts, detailed demos, and continuous version updates}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Air Travel Relational Database Implementation} $|$ \emph{CS 4400 - Database Systems}}{Aug. 2023 -- Dec. 2023}
+          \resumeItemListStart
+            \resumeItem{Applied MySQL to initialize physical database schema and normalized input data for airport tracking system}
+            \resumeItem{Provided supporting views and related procedures to enable a fully interactive and populated database}
+          \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Taxi Fare Prediction Model Implementation} $|$ \emph{CS 4641 - Machine Learning}}{Jan. 2023 -- May 2023}
+        \resumeItemListStart
+            \resumeItem{Configured large-scale datasets via Python using Pandas and NumPy for data cleaning and feature engineering}
+            \resumeItem{Trained models via supervised learning algorithms such as Random Forest, Multiple Regression, Decision Tree, Lasso, Ridge, and Polynomial Regression for optimal performance on validation set and unseen data}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Web-based Data Visualization} $|$ \emph{CS 4460 - Information Visualization}}{Jan. 2023 -- May 2023}
+        \resumeItemListStart
+            \resumeItem{Implemented a front-end interface for data exploration using HTML/CSS, JavaScript, and D3.js}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Android Tower Defense Application} $|$ \emph{CS 2340 - Objects \& Design}}{Jan. 2022 -- May 2022}
+        \resumeItemListStart
+            \resumeItem{Lead the creation of a a dynamic mobile application from scratch using Java and Android Studio Code}
+            \resumeItem{Implemented Object-Oriented design principles to enhance code modularity and extensibility}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Pong on GBA Emulator} $|$ \emph{CS 2110 - Computer Org. \& Programming}}{Sep. 2021 -- Nov. 2021}
+        \resumeItemListStart
+            \resumeItem{Manipulated video buffer and dynamic memory allocation using C within a Linux environment using Docker}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------
+\section{Experience}
+    \resumeSubHeadingListStart
+        \resumeExperienceHeading
+        {\textbf{Teaching Assistant} $|$ Design \& Analysis of Algorithms}{Aug. 2023 -- Dec. 2023}
+        \resumeItemListStart
+            \resumeItem{Contributed to creation of review materials and grading for a body of over 250 students}
+            \resumeItem{Covered a wide range of topics including Divide \& Conquer, Graph Theory, and Dynamic Programming}
+        \resumeItemListEnd
+        \resumeExperienceHeading
+        {\textbf{International Affairs Teacher} $|$ Model United Nations, Centennial HS}{Aug. 2019 -- May 2020}
+        \resumeItemListStart
+            \resumeItem{Formulated and delivered dynamic curriculum tailored for 9th to 12th grade students}
+            \resumeItem{Assumed role as lead instructor for elective course, showcasing effective leadership and communication}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills / Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: English -- native, French -- intermediate} \\
+     \textbf{Programming}{: Java, Python, C, C\#, SQL, JavaScript, HTML/CSS, R, LaTeX} \\
+     \textbf{Developer Tools}{: Git, Docker, Tableau, VS Code, IntelliJ, Android Studio, Google Colab, Jupyter Notebook} \\
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib, Seaborn, Sci-kit Learn, PyTorch, Tensorflow, D3.js, Gradio} \\
+     \textbf{Affiliations}{: GT Barbell Club, Alpha Tau Omega, Data Science @ GT} \\
+     \textbf{Interests}{: Golf, Tennis, Piano, Chess, International History, Weight Training, Data Science \& ML Technology}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
